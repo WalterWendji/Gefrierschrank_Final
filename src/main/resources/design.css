@@ -1,0 +1,164 @@
+ /* Stil für die Tabellenbeschriftung (Header) */
+ .table-view .column-header .label {
+    -fx-text-fill: white;
+ }
+
+ /* Stil für den Tabelleninhalt (Zellen) */
+ .table-cell {
+    -fx-text-fill: white;
+ }
+
+ /*Stil für das ausgewählte Element in der Tabelleview*/
+ .table-row-cell:selected {
+     -fx-background-color: white; /* Hintergrundfarbe des ausgewählten Elements */
+     -fx-text-fill: white; /* Textfarbe des ausgewählten Elements */
+     -fx-border-color: #0078d4; /* Randfarbe des ausgewählten Elements */
+     -fx-border-width: 2px; /* Randbreite */
+     -fx-padding: 3px; /* Padding um den Inhalt */
+ }
+
+ /*Stil für das Button "Gefrier" auf dem Vbox-Menu*/
+ .bloom-button {
+    -fx-background-color:transparent;
+ }
+
+ /*Effekt an das Button "Gefrier"*/
+ .bloom-button:hover {
+    -fx-background-color:#6AAAFF;
+ }
+
+ /*Stil für das Delete-Button auf dem VBox Menu*/
+ .bloom-button-1 {
+     -fx-background-color:transparent;
+ }
+
+ /*Effekt an das Delete-Button "Gefrier"*/
+ .bloom-button-1:hover {
+    -fx-background-color: #FF7D7D;
+ }
+
+ /*Stil für das Schließen Button von der Nachricht Fenster*/
+ .bloom-button-schliessen {
+    -fx-background-color:transparent;
+ }
+
+ /*Effekt an das Schließen Button von der Nachricht Fenster*/
+ .bloom-button-schliessen:hover {
+    -fx-background-color: red;
+ }
+
+ /*Stil für das Ja-Button von der Nachricht Fenster*/
+ .bloom-button-jaButton {
+    -fx-background-color:transparent;
+ }
+
+ /*Effekt an das Ja-Button von der Nachricht Fenster*/
+ .bloom-button-jaButton:hover {
+    -fx-background-color: #6AAAFF;
+ }
+
+ /*Stil für das Nein-Button von der Nachricht Fenster*/
+ .bloom-button-neinButton {
+    -fx-background-color:transparent;
+ }
+
+ /*Effekt an das Nein-Button von der Nachricht Fenster*/
+ .bloom-button-neinButton:hover {
+    -fx-background-color: #6AAAFF;
+ }
+
+ /*Stil für das Choice Box Menü, nämlich "language"*/
+ .choice-box .list-cell:selected {
+    -fx-background-color: yellow;
+    -fx-text-fill: red; /*Textfarbe des ausgewählten Elements*/
+ }
+
+ /*Stil für das erstellte New-User-Button*/
+ .button-newUser {
+     -fx-text-fill: white;
+     -fx-pref-height: 40;
+     -fx-pref-width: 142;
+     -fx-font-weight: bold;
+     -fx-font-size: 14;
+     -fx-font-family: cambria;
+ }
+
+ .choice-box .list-view .list-cell:selected {
+     -fx-background-color: yellow;
+     -fx-text-fill: red;
+ }
+
+ /*Stil für das erstellte Scrollpane*/
+
+ .scroll-pane {
+    -fx-background-color: #183F78;
+ }
+
+ /*Stil für das erstellte Scrollpane */
+ .scroll-pane > .viewport {
+    -fx-background-color:  #183F78;
+ }
+
+ /*Stil für die Skrollbalken*/
+ .scroll-bar:horizontal,
+ .scroll-bar:vertical {
+    -fx-background-color: transparent;
+ }
+
+ /*Stil für die Bildlaufleiste*/
+  .scroll-bar:horizontal .thumb,
+  .scroll-bar:vertical .thumb{
+     -fx-background-color: #849FC8;
+  }
+
+ /*Stil für die Skrollbalken*/
+  .increment-button:hover,
+  .decrement-button:hover {
+      -fx-background-color: #849FC8;
+  }
+
+/*Stil für die ScrollCorner*/
+  .scroll-pane > .corner {
+    -fx-background-color: #183F78;
+  }
+
+/*Stil für die Bildlaufpfeile*/
+  .increment-button,
+  .decrement-button {
+      -fx-pref-height: 15;
+  }
+
+/*Stil für das Stack-Pane Container*/
+ .stack-pane {
+    -fx-background-color: transparent;
+    -fx-prefWidth: 103 ;
+    -fx-prefHeight: 42;
+ }
+
+/*Stil für das Choice-Box ändern*/
+ .choice-box > .label {
+    -fx-text-fill: white;
+    -fx-font-family: "Cambria";
+    -fx-font-weight: bold;
+ }
+
+/*Stil für das Choice-Box*/
+ .choice-box {
+    -fx-background-color: #0C182C;
+    -fx-mark-color: #112D55;
+ }
+
+/*Hintergrundfarbe von dem Kontextmenü*/
+ .choice-box .context-menu { -fx-background-color: #0C182C;}
+/*Hintergrundfarbe von dem fokussierten Element im Kontextmenü*/
+ .choice-box .menu-item:focused { -fx-background-color: #112D55}
+/*Farbe von der Beschrifftung des Textes ändern*/
+ .choice-box .menu-item > .label {-fx-text-fill: #849FC8;}
+/*Farbe von dem fokussierten Text im Kontextmenü*/
+ .choice-box .menu-item:focused > .label {-fx-text-fill: white;}
+
+ .tooltip {
+    -fx-font: 16px "Cambria";
+    -fx-show-duration: 30s;
+    -fx-show-delay: 0s;
+ }

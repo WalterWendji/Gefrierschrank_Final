@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="BOTTOM_CENTER" style="-fx-background-color: #112D55;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gefrierschrank01.ControllerFenster2">
+  <children>
+      <Pane fx:id="paneFenster2" onMouseDragged="#onMouseDraggedMoveWindows" onMousePressed="#onMousePressedWindows" prefHeight="40.0" prefWidth="546.0" style="-fx-background-color: #072146;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="45.0" layoutY="12.0" text="Informationsangabe" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="schliessen" layoutX="506.0" layoutY="-1.0" mnemonicParsing="false" onAction="#closeWindows" onMouseEntered="#onMouseEnteredChangeColorCloseButton" onMouseExited="#onMouseExitedChangeColorCloseButton" prefHeight="40.0" prefWidth="41.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@Bild/icons8_Close_32px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="minimieren" layoutX="465.0" layoutY="-1.0" mnemonicParsing="false" onAction="#minimizeWindows" onMouseEntered="#onMouseEnteredChangeColorMinimizeButton" onMouseExited="#onMouseExitedChangeColorMinimizeButton" prefHeight="40.0" prefWidth="41.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@Bild/icons8_subtract_24px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Bild/Gef_image1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+    <AnchorPane blendMode="SRC_ATOP" maxHeight="-1.0" maxWidth="-1.0" prefHeight="372.0" prefWidth="546.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="TOP_CENTER" layoutX="33.0" layoutY="8.0" text="Mein Gefrierschrank - neu einfrieren" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lebensmittel" alignment="TOP_LEFT" layoutX="202.0" layoutY="66.0" prefHeight="25.0" prefWidth="201.0" promptText="Lebensmittel..." style="-fx-background-color: #264A7D;">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font></TextField>
+            <Text fill="WHITE" layoutX="56.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lebensmittel">
+               <font>
+                  <Font name="Cambria" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="56.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menge">
+               <font>
+                  <Font name="Cambria" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="55.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fach">
+               <font>
+                  <Font name="Cambria" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="54.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Einfrierdatum">
+               <font>
+                  <Font name="Cambria" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="54.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ablaufdatum">
+               <font>
+                  <Font name="Cambria" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="menge" layoutX="200.0" layoutY="105.0" prefHeight="25.0" prefWidth="90.0" promptText="Anzahl..." style="-fx-background-color: #264A7D;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="fach" layoutX="199.0" layoutY="182.0" prefHeight="25.0" prefWidth="90.0" promptText="Fach..." style="-fx-background-color: #264A7D;">
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font></TextField>
+            <DatePicker fx:id="einfrierdatum" layoutX="199.0" layoutY="218.0" style="-fx-background-color: #264A7D;">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color green="0.35686275362968445" blue="0.843137264251709" />
+                     </color>
+                  </InnerShadow>
+               </effect></DatePicker>
+            <RadioButton layoutX="200.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#aufAutomatischKlick" text="automatisch" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="auswahl" />
+               </toggleGroup>
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="337.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#aufManuelKlick" text="manuell" textFill="WHITE" toggleGroup="$auswahl">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </RadioButton>
+            <DatePicker fx:id="ablaufdatum" layoutX="200.0" layoutY="296.0" style="-fx-background-color: #264A7D;" visible="false">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color green="0.35686275362968445" blue="0.843137264251709" />
+                     </color>
+                  </InnerShadow>
+               </effect></DatePicker>
+            <Label fx:id="autodatum" layoutX="214.0" layoutY="300.0" text="Datum wird angezeigt" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="absenden" layoutX="348.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#SubmitAndQuit" onMouseEntered="#onMouseEnteredChangeColorSpeichernButton" onMouseExited="#onMouseExitedRestoreColorSpeichernButton" style="-fx-border-color: #1D4B92; -fx-border-width: 3;" text="Speichern!" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="zurueckbutton" layoutX="103.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#zurueckgehen" onMouseEntered="#onMouseEnteredChangeColorZurueckButton" onMouseExited="#onMouseExitedRestoreColorZurueckButton" style="-fx-border-color: #1D4B92; -fx-border-width: 3;" text="&lt;&lt; Zurück" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="56.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Einheit">
+               <font>
+                  <Font name="Cambria" size="23.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="einheit" layoutX="199.0" layoutY="146.0" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #264A7D;" stylesheets="@../design.css" />
+            <TextField fx:id="einheit1" layoutX="199.0" layoutY="147.0" promptText="andere Einheit..." style="-fx-background-color: #264A7D;" visible="false">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+            </TextField>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

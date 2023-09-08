@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="151.0" prefWidth="380.0" style="-fx-background-color: #112D55;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gefrierschrank01.ControllerFenster3">
+   <children>
+      <Text fill="WHITE" layoutX="76.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Möchten Sie wirklich Ihre gespeicherten Daten löschen?" wrappingWidth="263.7367630004883">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="jaButton" layoutX="100.0" layoutY="112.0" mnemonicParsing="false" onAction="#jaOderNeinhandeln" prefHeight="34.0" prefWidth="54.0" style="-fx-border-color: #1D4B92; -fx-border-width: 3;" text="Ja" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="neinButton" layoutX="217.0" layoutY="112.0" mnemonicParsing="false" onAction="#jaOderNeinhandeln" style="-fx-border-color: #1D4B92; -fx-border-width: 3;" text="Nein" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Button>
+      <HBox layoutX="1.0" prefHeight="38.0" prefWidth="380.0" style="-fx-background-color: #071F42;">
+         <children>
+            <Button fx:id="schliessenButton" mnemonicParsing="false" onMouseClicked="#schliesseDasFenster" prefHeight="37.0" prefWidth="38.0" translateX="341.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Bild/icons8_Close_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Bild/Red-Warning.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
