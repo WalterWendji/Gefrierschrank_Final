@@ -89,7 +89,7 @@ public class ControllerFenster3 implements Initializable {
         ControllerFenster3.onChoiceComplete = onChoiceComplete; //ermöglicht das Löschen von dem Node.
         stage.initStyle(StageStyle.UNDECORATED);
         stage.initOwner(parentStage); //Das Hauptfenster wird bestimmt.
-        stage.initModality(Modality.APPLICATION_MODAL); //legt fest, dass die Interaktion auf dem Hauptfenster nicht möglich ist.
+        stage.initModality(Modality.WINDOW_MODAL); //legt fest, dass die Interaktion auf dem Hauptfenster nicht möglich ist.
         FXMLLoader fxmlLoader = new FXMLLoader(GefrierschrankMain.class.getResource("interface3.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         String cssFilePath = getClass().getResource("/design.css").toExternalForm(); //hole die Stildatei.

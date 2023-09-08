@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\dwend\IdeaProjects\Gefrierschrank_Final\out\artifacts\Gefrierschrank_Final_jar\Gefrierschrank_Final.jar</jar>
+  <outfile>C:\Users\dwend\IdeaProjects\Gefrierschrank_Final\out\artifacts\Gefrierschrank_Final_jar\Gefrierschrank.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\dwend\Downloads\gefrierschrank_image_zgu_icon.ico</icon>
+  <jre>
+    <path>C:\Users\dwend\IdeaProjects\Gefrierschrank_Final\out\artifacts\Gefrierschrank_Final_jar</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>

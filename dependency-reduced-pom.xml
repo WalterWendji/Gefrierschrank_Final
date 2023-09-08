@@ -23,7 +23,7 @@
           <execution>
             <id>default-cli</id>
             <configuration>
-              <mainClass>gefrier.gefrierschrank_final/gefrierschrank01.MainKlasse</mainClass>
+              <mainClass>gefrier.gefrierschrank_final/gefrierschrank01.Launch</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
