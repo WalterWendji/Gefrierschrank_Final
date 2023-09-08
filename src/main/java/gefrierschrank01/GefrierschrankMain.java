@@ -14,7 +14,7 @@ import java.io.IOException;
  * benutzt wurde, wird die von Scene Builder erstelle Datei hierher importiert.
  *
  * @version 0.1
- * @author Walter Dongmepi, Philip Heising, Momcilo Bajic
+ * @author Philip Heising
  */
 public class GefrierschrankMain extends Application {
     public static Stage popupStage;

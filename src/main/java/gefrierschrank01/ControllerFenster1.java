@@ -52,7 +52,7 @@ import java.util.logging.Logger;
  * Beim Öffnen des Programms hat man folglich einen ganzen Überblick über die schon eingefrorenen Lebensmittel mit
  * ihren Einfrierdaten mit einbezogen.
  *
- * @author Walter Dongmepi, Philip Heising, Momcilo Bajic
+ * @author Walter Dongmepi
  */
 public class ControllerFenster1 implements Initializable {
 

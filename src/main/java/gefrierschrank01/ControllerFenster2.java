@@ -30,7 +30,7 @@ import java.util.ResourceBundle;
  * an die Datenbank übertragen und da abgespeichert. Diese Klasse ist logischerweise
  * mit der Datenbank verbunden.
  *
- * @author Walter Dongmepi, Philip Heising, Momcilo Bajic
+ * @author Walter Dongmepi
  * */
 
 public class ControllerFenster2 implements Initializable {

@@ -7,7 +7,7 @@ import java.sql.Statement;
 /**
  * Diese Klasse stellt die Verbindung zur SQL Datenbank her.
  *
- * @author Walter Dongmepi, Philip Heising, Momcilo Bajic
+ * @author Philip Heising
  */
 public class DB_Connect {
     private boolean update;

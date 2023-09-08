@@ -8,7 +8,7 @@ import java.sql.SQLException;
 /**
  *Zeigt die eingetragenen Lebensmittel in der Tabelle an.
  *
- * @author Walter Dongmepi, Philip Heising, Momcilo Bajic
+ * @author Philip Heising
  */
 public class Tabelle {
     private String lebensmittel;

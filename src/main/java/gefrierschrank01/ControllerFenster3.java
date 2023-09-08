@@ -20,7 +20,7 @@ import java.util.ResourceBundle;
  * Diese Klasse ist verantwortlich für alles, was mit dem Fenster 3 zu tun hat. Diese Klasse dient ausschließlich
  * zu einer kleinen Meldung, die geworfen wird, wenn der Nutzer ein Konto löschen möchte.
  *
- * @author  Walter Dongmepi, Philip Heising, Momcilo Bajic
+ * @author Philip Heising
  * @version 0.1
  */
 

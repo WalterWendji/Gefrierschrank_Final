@@ -1,3 +1,5 @@
+ /*@author Walter Dongmepi*/
+
  /* Stil für die Tabellenbeschriftung (Header) */
  .table-view .column-header .label {
     -fx-text-fill: white;
